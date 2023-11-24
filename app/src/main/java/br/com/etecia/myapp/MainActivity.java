@@ -1,6 +1,7 @@
 package br.com.etecia.myapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
@@ -16,7 +17,13 @@ public class MainActivity extends AppCompatActivity {
 
         idRecyclerViewFilmes = findViewById(R.id.idRecyclerViewFilmes);
 
+        idRecyclerViewFilmes.setLayoutManager(new GridLayoutManager(getApplicationContext(),2));
+        //Qual o modelo do Recycler (Linear, Grade ou Stangger
 
+        idRecyclerViewFilmes.setHasFixedSize(true);
+        //Alocação de memória
 
+        /**idRecyclerViewFilmes.setAdapter(adapter);
+        Carregar o adptador criado anteriormente *//
     }
 }
