@@ -24,6 +24,6 @@ public class MainActivity extends AppCompatActivity {
         //Alocação de memória
 
         /**idRecyclerViewFilmes.setAdapter(adapter);
-        Carregar o adptador criado anteriormente *//
+        Carregar o adptador criado anteriormente */
     }
 }
